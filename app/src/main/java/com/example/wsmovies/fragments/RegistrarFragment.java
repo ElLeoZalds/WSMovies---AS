@@ -82,11 +82,11 @@ public class RegistrarFragment extends Fragment {
         // 0. Preparar el JSON
         // Definir que condición tiene
         genero = "";
-        if ( rbtAnimado.isChecked()) { genero = "Bueno"; }
-        if ( rbtDrama.isChecked()) { genero = "Regular"; }
-        if ( rbtComedia.isChecked()) { genero = "Malo"; }
-        if ( rbtAccion.isChecked()) { genero = "Malo"; }
-        if ( rbtTerror.isChecked()) { genero = "Malo"; }
+        if ( rbtAnimado.isChecked()) { genero = "animado"; }
+        if ( rbtDrama.isChecked()) { genero = "drama"; }
+        if ( rbtComedia.isChecked()) { genero = "comedia"; }
+        if ( rbtAccion.isChecked()) { genero = "accion"; }
+        if ( rbtTerror.isChecked()) { genero = "terror"; }
 
 
         JSONObject datosEnviar = new JSONObject();

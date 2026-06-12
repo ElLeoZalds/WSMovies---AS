@@ -63,49 +63,50 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="Género: "
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Género:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
         <RadioGroup
             android:id="@+id/rgGenero"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
 
             <RadioButton
                 android:id="@+id/rbtAnimadoM"
-                android:text="Animado"
-                android:layout_marginEnd="1dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Animado"/>
 
             <RadioButton
                 android:id="@+id/rbtDramaM"
-                android:text="Regular"
-                android:layout_marginEnd="1dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Drama"/>
 
             <RadioButton
                 android:id="@+id/rbtComediaM"
-                android:text="Comedia"
-                android:layout_marginEnd="1dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Comedia"/>
 
             <RadioButton
                 android:id="@+id/rbtAccionM"
-                android:text="Accion"
-                android:layout_marginEnd="1dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Acción"/>
 
             <RadioButton
                 android:id="@+id/rbtTerrorM"
-                android:text="Terror"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Terror"/>
+
         </RadioGroup>
 
         <EditText
