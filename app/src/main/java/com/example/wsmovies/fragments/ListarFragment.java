@@ -60,6 +60,14 @@ public class ListarFragment extends Fragment {
         obtenerDatos();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        listaPeliculas.clear();
+        obtenerDatos();
+    }
+
     private void obtenerDatos() {
         requestQueue = Volley.newRequestQueue(requireContext().getApplicationContext());
 
