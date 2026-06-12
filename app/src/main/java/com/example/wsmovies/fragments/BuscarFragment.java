@@ -31,7 +31,7 @@ public class BuscarFragment extends Fragment {
     Button btnBuscarM, btnActualizarM;
     RequestQueue requestQueue; // Cola de solicitud
     String genero = ""; // RadioButton
-    private final String URL = "http://192.168.101.65:3000/api//"; // Endpoint
+    private final String URL = "http://192.168.101.65:3000/api/peliculas/"; // Endpoint
     RadioButton rbtAnimadoM, rbtDramaM, rbtComediaM, rbtAccionM, rbtTerrorM;
 
     // Constructor
@@ -74,17 +74,17 @@ public class BuscarFragment extends Fragment {
 
                             JSONObject data = response.getJSONObject("data");
 
-                            edtTituloM.setText(data.getString("nombre"));
-                            edtDuracionM.setText(data.getString("marca"));
-                            edtALanzamientoM.setText(data.getString("descripcion"));
+                            edtTituloM.setText(data.getString("titulo"));
+                            edtDuracionM.setText(data.getString("duracionmin"));
+                            edtALanzamientoM.setText(data.getString("alanzamiento"));
 
-                            genero = data.getString("condicion");
+                            genero = data.getString("genero");
 
-                            rbtAnimadoM.setChecked(genero.equals("Bueno"));
-                            rbtDramaM.setChecked(genero.equals("Regular"));
-                            rbtComediaM.setChecked(genero.equals("Malo"));
-                            rbtAccionM.setChecked(genero.equals("Manual"));
-                            rbtTerrorM.setChecked(genero.equals("Eléctrica"));
+                            rbtAnimadoM.setChecked(genero.equals("animado"));
+                            rbtDramaM.setChecked(genero.equals("drama"));
+                            rbtComediaM.setChecked(genero.equals("comedia"));
+                            rbtAccionM.setChecked(genero.equals("accion"));
+                            rbtTerrorM.setChecked(genero.equals("terror"));
                         }
                     } catch (Exception e) {
                         Log.e("ERROR", e.toString());

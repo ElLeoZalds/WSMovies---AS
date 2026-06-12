@@ -34,7 +34,7 @@ public class PeliculaAdapter extends RecyclerView.Adapter<PeliculaAdapter.ViewHo
     private Context context;
 
     RequestQueue requestQueue;
-    private final String URL = "http://192.168.101.65:3000/api//"; // Endpoint
+    private final String URL = "http://192.168.101.65:3000/api/peliculas/"; // Endpoint
 
     // PASO 2
     // Metodo contructor para la clase principal "PeliculaAdapter"

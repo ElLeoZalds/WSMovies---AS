@@ -31,7 +31,7 @@ public class RegistrarFragment extends Fragment {
     Button btnTestWS, btnGuardarPelicula;
     RequestQueue requestQueue; // Cola de solicitud
     String genero = ""; // RadioButton
-    private final String URL = "http://192.168.101.65:3000/api//"; // Endpoint
+    private final String URL = "http://192.168.101.65:3000/api/peliculas/"; // Endpoint
     EditText edtTitulo, edtDuracion, edtALanzamiento;
     RadioButton rbtAnimado, rbtDrama, rbtComedia, rbtAccion, rbtTerror;
 
